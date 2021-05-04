@@ -1,0 +1,90 @@
+@charset 'utf-8';
+@import url('common.css');
+
+body{ 
+    background: #e7ecf0;
+    height:1090px;
+}
+
+.portfolio{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.work{
+    width:80%;
+    padding:200px 0 100px 0;
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+
+}
+.work p{
+    width:21%;
+    margin:0px 0 70px 0px;
+}
+
+.work p a{
+   width:100%;
+   height:400px;
+   display: block;
+   overflow: hidden;
+   
+}
+.work p strong{
+    line-height:2.5em;
+    font-size: 18px;
+    font-weight: normal;
+    display: block;
+
+}
+.work p img{
+    width:100%;
+    transition: 0.5s;
+}
+.work p:hover img{
+    
+    transform: scale(1.2);
+    
+}
+@media (min-width:1921px) and (max-width:2800px){
+  
+    .portfolio img{
+        width:350px;
+        margin-left: 30px;
+        margin-top: 20px;
+    }
+    .work p{ margin:0px 0 180px 0px;}
+    .work p a{height: 500px;}
+    .work p strong{font-size:1.8em;}
+    .work p span{font-size:1.8em}
+}
+
+@media (min-width:1025px) and (max-width:1900px){
+
+}
+@media (min-width:768px) and (max-width:1023px){
+    .work{margin-top:-8%;}
+    .work p{
+        width:45%;
+        
+        
+    }
+    .work p a{height: 44vw;}
+
+    /* .work strong{
+        margin-top:-90px
+    } */
+}
+@media (max-width:1024px){
+    .work{margin-top:-8% ;}
+}
+@media (max-width:1366px){
+    .work p{
+        width:45%;
+        
+    }
+    .work p a{height: 44vw;}
+
+}
